@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spécialité N.S.I</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/LogoNSI.png">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo"><img src="img/LogoNSI.png" alt="LogoDeLaNSI" width="30px" class="imglogo">Spécialité N.S.I<img src="img/LogoNSI.png" alt="LogoDeLaNSI" width="30px" class="imglogo"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><img src="img/LogoNSI.png" alt="LogoDeLaNSI" width="50px" class="imglogo"></li>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="programme.html">Programme</a></li>
+                    <li class="active"><a href="realisation.html">Réalisations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <img src="img/menu-btn.png" alt="C'est un hamburger, triple couches" class="menu-hamburger">
+        </nav>
+    </header>
+
+    <main>
+        <div class="content">
+            <h1>Voici nos travaux et nos exploits!</h1>
+        </div>
+
+        <section class="slider-rea">
+          <div class="slider-cont">
+            <div class="slider-wrapper">
+              <button id="prev-slide" class="slide-button material-symbols-rounded">
+                <span>&#8668;</span>
+              </button>
+              <ul class="image-list">
+                <img class="image-item" src="img/SantaRock.jpg" onclick="openPopup1()" alt="img-1" />
+                <img class="image-item" src="img/CiscoPacketTracer.jpg" onclick="openPopup2()" alt="img-2" />
+                <img class="image-item" src="img/Pygame.png" onclick="openPopup3()" alt="img-3" />
+                <img class="image-item" src="img/Le Rêve De Robotnik.jpg" onclick="openPopup4()" alt="img-4" />
+                <img class="image-item" src="img/LeFildAriane.jpg" onclick="openPopup5()" alt="img-5" />
+                <img class="image-item" src="img/carteresto.jfif" onclick="openPopup6()" alt="img-6" />
+                <img class="image-item" src="img/ConvertisseurHexDecBin.png" onclick="openPopup7()" alt="img-7" />
+                <img class="image-item" src="img/INCEPTION.png" onclick="openPopup8()" alt="img-8" id="cred"/>
+                <iframe class="image-item" src="https://www.youtube.com/embed/5mX_GhItwoU?si=Te2gin8ZgRa7mL9o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </ul>
+              <button id="next-slide" class="slide-button material-symbols-rounded">
+                <span>&#8669;</span>
+              </button>
+            </div>
+            <div class="slider-scrollbar">
+              <div class="scrollbar-track">
+                <div class="scrollbar-thumb"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="container3">
+          <div class="popup" id="popup1">
+            <img src="img/pointimgpopup.png" alt="">
+            <h2>Santa Rock</h2>
+            <p>Bob, un jeune garçon passionné de la guitare électrique, a envie de devenir une star du Rock’n’
+              Roll afin de pouvoir jouer sur toutes les grandes scènes du monde entier pour Noel. Il veut redonner
+              vie au Rock’n’ Roll et suivre les pas de son guitariste préféré Rock Master.
+              Grâce à Papa Noel, son voeu est devenu réalité ! Bob va aller enregistrer son premier titre dans le
+              studio le plus connu, le CC Studio.
+              <br>
+              C'est un sujet du Coding Club organisé par Epitech. En utilisant le langage JavaScript, nous pouvons faire un jeu!
+              <br>
+              Pour télécharger le sujet, clic <span class="redlink"><a href="res/SantaRock.pdf" download="Sujet de Coding Club Santa Rock by Xth.pdf">ICI</a></span>
+            </p>
+            <button type="button" onclick="closePopup1()">OK</button>
+        </div>
+
+        <div class="popup" id="popup2">
+          <img src="img/pointimgpopup.png" alt="">
+          <h2>Simulations de réseaux</h2>
+          <p>Un réseau informatique est un ensemble d'équipements reliés entre eux pour échanger des 	informations. 
+            La manière dont les informations sont échangées entre les équipements du réseau est matérialisée par des protocoles de communications. 
+            <br>
+            Cet outil créé par Cisco Systems  est un simulateur permettant d'apprendre les principes du réseau, 
+            tout en acquérant des compétences de base.
+            <br>
+            Voici un exemple  d'utilisation, clic <span class="redlink"><a href="res/DNS.pkt" download="Exemple d'utilisation de Cisco Packet Tracer by Xth.pkt">ICI</a></span>
+            <br>
+            *Le logiciel Cisco Packet Tracer sera fournie  par l'enseignant et pour une raison de légalité, je ne peux pas vous fournir un crack.
+          </p>
+          <button type="button" onclick="closePopup2()">OK</button>
+      </div>
+
+      <div class="popup" id="popup3">
+        <img src="img/pointimgpopup.png" alt="">
+        <h2>Flappy Ball</h2>
+        <p>Découverte du module Python, Pygame qui permet, comme son nom l'indique, faire des  jeux vidéo avec Python.
+        A l'aide 3 vidéos tutorielles plus au moins longue de 20 min à 40 min et avec d'autres ressources comme des images,
+        nous avons crée un "flappy bird" game. Au lieu de l'oiseau, c'est un ballon gonflable rouge, et au lieu des tuyaux verts iconiques, 
+        des nuages blancs et fond bleu représentant le ciel.
+          <br>
+          Nous avons utiliser EduPython, fournie par l'enseigant, comme éditeur de code Python pour crée ce fameux jeu!
+          <br>
+          Pour télécharger les images ressources, clic <span class="redlink"><a href="res/PygameImg.rar" download="Sujet de Coding Club Santa Rock by Xth.rar">ICI</a></span>
+        </p>
+        <button type="button" onclick="closePopup3()">OK</button>
+    </div>
+
+    <div class="popup" id="popup4">
+      <img src="img/pointimgpopup.png" alt="">
+      <h2>Le rêve de Robotnik</h2>
+      <p>Le Docteur Ivo Robotnik est le méchant de l’univers de Sonic. Après toutes ces aventures à essayer de capturer Sonic, 
+        il décide de prendre une pause pour faire une sieste. En effet, 
+        ce n’est pas facile d’avoir 300 de QI et de courir après le hérisson bleu le plus rapide du monde !
+        Sonic vous a donné une mission très importante pour qu’il puisse prendre des vacances. Vous devez vous introduire dans le rêve du docteur pour lui donner l’impression de courir après Sonic.
+        <br>
+        Nous avons utiliser EduPython, fournie par l'enseigant, comme éditeur de code Python pour crée ce fameux jeu!
+        <br>
+        Pour télécharger le début du sujet, clic <span class="redlink"><a href="res/Le Rêve De Robotnik.pdf" download="Sujet de Coding Club Le Rêve de Robotnik by Xth.pdf">ICI</a></span>
+        <br>
+        Pour télécharger les images ressources, clic <span class="redlink"><a href="res/ImgSonic.rar" download="Images de Coding Club Le Rêve de Robotnik by Xth.rar">ICI</a></span>
+      </p>
+      <button type="button" onclick="closePopup4()">OK</button>
+  </div>
+
+
+  <div class="popup" id="popup5">
+    <img src="img/pointimgpopup.png" alt="">
+    <h2>Le Fil d'Ariane</h2>
+    <p>La recherche de chemin, couramment appelée pathfinding par anglicisme, est un problème
+      de l’intelligence artificielle qui se rattache plus généralement au domaine de la planification
+      et de la recherche de solution.
+      Il consiste à trouver comment se déplacer dans un environnement entre un point de départ et
+      un point d’arrivée en prenant en compte différentes contraintes.
+      <br>
+      Nous avons utiliser EduPython, fournie par l'enseigant, comme éditeur de code Python pour creé ce fameux jeu!
+      <br>
+      Pour télécharger le début du sujet, clic <span class="redlink"><a href="res/LeFildAriane.pdf" download="Sujet de Coding Club Le Rêve de Robotnik by Xth.pdf">ICI</a></span>
+    </p>
+    <button type="button" onclick="closePopup5()">OK</button>
+    </div>
+
+
+    <div class="popup" id="popup6">
+      <img src="img/pointimgpopup.png" alt="">
+      <h2>Carte du Restaurant</h2>
+      <p>Ceci est un programme sous langage Python, codé par Guillaume, un camarade de classe, permet de choisir 
+        son ou ses entrées, son ou ses plats, son ou ses désserts. En utilisant des dictionnaires en Python, 
+        il est possible de créer une carte totalement personifiable et fonctionelle.
+        <br>
+        Nous avons utiliser EduPython, fournie par l'enseigant, comme éditeur de code Python pour creé cette fameuse carte!
+        <br>
+        Pour télécharger le programme, clic <span class="redlink"><a href="res/Menu_restaurant_dictionnaires.py" download="Programme Python Carte Menu Restaurant by Xth.py">ICI</a></span>
+      </p>
+      <button type="button" onclick="closePopup6()">OK</button>
+      </div>
+
+
+      <div class="popup" id="popup7">
+        <img src="img/pointimgpopup.png" alt="">
+        <h2>Convertisseur</h2>
+        <p>Il est possible de créer un convertisseur avec le langage JavaScript. Convertir en direct entre Hexadécimal '(Base de 16)', Binaire '(Base de 2)' et Décimal '(Base de 10)'.
+          Avec le strict minimum en HTML et en CSS
+        </p>
+        <form action="">
+          <fieldset>
+              <legend>Convertir</legend>
+              <p>
+                  <label for="decimal">Décimal</label>
+                  <input type="number" id="decimal" name="decimal" placeholder="ex:42">
+                  <input type="button" value="↔️">
+              </p>
+      
+              <p>
+                  <label for="hexadecimal">Hexadécimal</label>
+                  <input type="text" id="hexadecimal" name="hexadecimal" placeholder="ex:2a">
+                  <input type="button" value="↔️">
+              </p>
+      
+              <p>
+                  <label for="binary">Binaire</label>
+                  <input type="text" id="binary" name="binary" placeholder="ex:101010">
+                  <input type="button" value="↔️">
+              </p>
+          </fieldset>
+      
+      </form>
+        <button type="button" onclick="closePopup7()">OK</button>
+        </div>
+
+
+        <div class="popup" id="popup8">
+          <img src="img/pointimgpopup.png" alt="">
+          <h2>Un projet pas comme les autres...</h2>
+          <p>Une excellente référence pour les symboles HTML, les entités et les codes de caractères ASCII, 
+            clic <span class="redlink"><a href="https://www.toptal.com/designers/htmlarrows/" target="_blank">ICI</a></span>
+            <br>
+            Apprendre à coder, avec le plus grand site de développeurs web au monde, 
+            clic <span class="redlink"><a href="https://www.w3schools.com" target="_blank">ICI</a></span>
+            <br>
+            Ressources pour les développeurs, par des développeurs. Documentation des technologies web, y compris CSS, HTML et JavaScript, 
+            clic <span class="redlink"><a href="https://developer.mozilla.org/fr/" target="_blank">ICI</a></span>
+            <br>
+            Retrouvez ici des tutoriels et des cours sur le développement web, le webdesign et bien d'autres thèmes, 
+            clic <span class="redlink"><a href="https://www.youtube.com/@EcoleduWeb" target="_blank">ICI</a></span>
+            
+          </p>
+          <button type="button" onclick="closePopup8()">OK</button>
+          </div>
+
+        </section>
+
+      <button onclick="topFunction()" id="arrtopbtn"><img src="img/arrow-top.png" alt="" width="35px"></button>
+    </main>
+
+    <footer>
+        <div class="content-footer">
+          <div class="bloc footer-services">
+            <h3>Autres Spécialités</h3>
+            <ul class="services-list">
+              <li><a >L.L.C.E</a></li>
+              <li><a >H.G.G.S.P</a></li>
+              <li><a >H.L.P</a></li>
+              <li><a >S.E.S</a></li>
+              <li><a >Maths</a></li>
+              <li><a >S.V.T</a></li>
+              <li class="redlink"><a href="www.ejda.fr/lycee">Pour + d'infos</a></li>
+
+            </ul>
+          </div>
+  
+          <div class="bloc footer-contact">
+            <h3>Restez avec nous</h3>
+            <p>03 89 45 36 31</p>
+            <p class="redlink"><a href="mailto:e.xemple@ejda.fr">Envoyer Email Click ici</a></p>
+            <p>15 rue Chanoine Brun
+              68100 MULHOUSE</p>
+          </div>
+  
+          <div class="bloc footer-schedule">
+            <h3>Horraires</h3>
+            <ul class="schedule-list">
+              <li>✔️ Lun 08-18 ✔️</li>
+              <li>✔️ Mar 08-18 ✔️</li>
+              <li>✔️ Mer 08-18 ✔️</li>
+              <li>✔️ Jeu 08-18 ✔️</li>
+              <li>✔️ Ven 08-18 ✔️</li>
+              <li>❌ Sam Fermé ❌</li>
+              <li>❌ Dim Fermé ❌</li>
+            </ul>
+          </div>
+  
+          <div class="bloc footer-medias">
+            <h3>Mes Réseaux</h3>
+            <ul class="media-list">
+              <li>
+                <a >
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fab"
+                    data-icon="instagram"
+                    class="svg-inline--fa fa-instagram fa-w-14"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                    ></path>
+                  </svg>
+                  Instagram/xth_dragon</a>
+              </li>
+
+              <li>
+                <a >
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fab"
+                    data-icon="twitter"
+                    class="svg-inline--fa fa-twitter fa-w-16"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                    ></path>
+                  </svg>
+                  X/@Xth_Dragon</a>
+              </li>
+
+              <li>
+                <a >
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fab"
+                    data-icon="github"
+                    class="svg-inline--fa fa-github fa-w-16"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 496 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                    ></path>
+                  </svg>
+                  Github/Xth-Dragon</a>
+              </li>
+
+              <li>
+                <a >
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fab"
+                    data-icon="youtube"
+                    class="svg-inline--fa fa-youtube fa-w-18"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 576 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
+                    ></path>
+                  </svg>
+                  Youtube/@Xth_Dragon</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+    </footer>
+
+</body>
+<script src="JS/hamburger.js"></script>
+<script src="JS/toparrow.js"></script>
+<script src="JS/reaslider.js"></script>
+<script src="JS/popupslider.js"></script>
+<script src="JS/ConvertDecBinHex.js"></script>
+</html>
