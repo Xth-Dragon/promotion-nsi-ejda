@@ -3,8 +3,8 @@
 function openPopup1(){
     popup1.classList.add("open-popup");
     document.body.classList.add('lock');
-    document.body.scrollTop = 0; 
-    document.documentElement.scrollTop = 0; 
+    // document.body.scrollTop = 0; 
+    // document.documentElement.scrollTop = 0; 
 }
 
 function closePopup1(){
