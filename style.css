@@ -129,6 +129,7 @@ h1 {
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 20px;
+    max-width: 1400px
 }
 
 .card {
