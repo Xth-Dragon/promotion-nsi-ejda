@@ -17,8 +17,8 @@ function closePopup1(){
 function openPopup2(){
     popup2.classList.add("open-popup");
     document.body.classList.add('lock');
-    // document.body.scrollTop = 0; 
-    // document.documentElement.scrollTop = 0; 
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0; 
 }
 
 function closePopup2(){
@@ -31,8 +31,8 @@ function closePopup2(){
 function openPopup3(){
     popup3.classList.add("open-popup");
     document.body.classList.add('lock');
-    // document.body.scrollTop = 0; 
-    // document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0; 
 }
 
 function closePopup3(){
@@ -45,8 +45,8 @@ function closePopup3(){
 function openPopup4(){
     popup4.classList.add("open-popup");
     document.body.classList.add('lock');
-    // document.body.scrollTop = 0; 
-    // document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0; 
 }
 
 function closePopup4(){
@@ -59,8 +59,8 @@ function closePopup4(){
 function openPopup5(){
     popup5.classList.add("open-popup");
     document.body.classList.add('lock');
-    // document.body.scrollTop = 0; 
-    // document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0; 
 }
 
 function closePopup5(){
@@ -73,8 +73,8 @@ function closePopup5(){
 function openPopup6(){
     popup6.classList.add("open-popup");
     document.body.classList.add('lock');
-    // document.body.scrollTop = 0; 
-    // document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0; 
 }
 
 function closePopup6(){
@@ -87,8 +87,8 @@ function closePopup6(){
 function openPopup7(){
     popup7.classList.add("open-popup");
     document.body.classList.add('lock');
-    // document.body.scrollTop = 0; 
-    // document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0; 
 }
 
 function closePopup7(){
@@ -101,8 +101,8 @@ function closePopup7(){
 function openPopup8(){
     popup8.classList.add("open-popup");
     document.body.classList.add('lock');
-    // document.body.scrollTop = 0; 
-    // document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0; 
 }
 
 function closePopup8(){
